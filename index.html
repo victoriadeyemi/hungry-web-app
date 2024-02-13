@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HUNGRY!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(51, 46, 46, 0.534);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h1>HUNGRY!</h1>
+                    </a>
+                    <div class="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">My Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="https://github.com/HJandu/front-end-project1">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </header>
+        <div class="recipe">
+            <input type="text" name="query" id="query" placeholder="Type in ingredients seperated by a comma">
+            <button id="searchBtn" type="submit">Find Recipe</button>
+        </div>
+        <div class="recipe-output">
+        <div class="container bg-rgba(51, 46, 46, 0.534)">
+            <div class="row" id="row-test">
+                <div class="col-md-6 col-sm-12">
+                    <!-- populate the cards -->
+                    <div class="row" id="recipe-row"> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container bg-white">
+            <h3>
+                Chef's Top Recommendations
+            </h3>
+            <div class="row" id="popularRecipes">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
